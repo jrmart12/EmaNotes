@@ -69,7 +69,11 @@ def retrieve_table_data():
                 elif m == 4:
                     final_path = first_part + str(n) + second_part + str(m) + third_part
                     table_data = driver.find_element_by_xpath(final_path).text
+<<<<<<< HEAD
                     message += '   [Grade: ' + table_data + "]   "
+=======
+                    message += '   [Grade:' + table_data + "]   "
+>>>>>>> 828e029bed7b1109fa7e44f745f79a66c61ef5b6
                 elif m == 5:
                     final_path_for_i = first_part + str(n) + second_part + str(m) + third_part + i
                     try:
@@ -77,7 +81,11 @@ def retrieve_table_data():
                         attribute = table_data.get_attribute('class')
                         if attribute == 'fa fa-star gold-star':
                             goals = ':thumbsup:'
+<<<<<<< HEAD
                         elif attribute == 'fa fa-star gray-star':
+=======
+                        elif attribute == 'fa fa-star gold-star':
+>>>>>>> 828e029bed7b1109fa7e44f745f79a66c61ef5b6
                             goals = ':thumbsdown:'
                     except NoSuchElementException:
                         goals = ':mortar_board:'
